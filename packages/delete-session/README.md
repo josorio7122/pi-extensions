@@ -1,6 +1,14 @@
-# @josorio/delete-session
+# delete-session
 
 Pi extension that adds `/delete` to delete the current session.
+
+## Installation
+
+Included when you install the parent package:
+
+```bash
+pi install git:github.com/josorio7122/pi-extensions
+```
 
 ## Behavior
 

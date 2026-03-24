@@ -13,5 +13,8 @@
     "extensions": [
       "./extensions"
     ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
   }
 }

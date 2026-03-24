@@ -1,11 +1,13 @@
-# @josorio/exit
+# exit
 
 Pi extension that adds `/exit` as an alias for the built-in `/quit` command.
 
 ## Installation
 
+Included when you install the parent package:
+
 ```bash
-pi install /path/to/pi-packages/packages/exit
+pi install git:github.com/josorio7122/pi-extensions
 ```
 
 ## Usage

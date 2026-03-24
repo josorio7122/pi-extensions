@@ -6,16 +6,25 @@ Collection of useful [pi](https://github.com/nickarino/pi-coding-agent) extensio
 
 | Extension | Description |
 |-----------|-------------|
-| [@josorio/delete-session](packages/delete-session/) | Adds `/delete` to delete the current session |
-| [@josorio/exit](packages/exit/) | Adds `/exit` as an alias for `/quit` |
+| [delete-session](packages/delete-session/) | Adds `/delete` to delete the current session |
+| [exit](packages/exit/) | Adds `/exit` as an alias for `/quit` |
 
 ## Installation
 
-Install any extension directly from this repo:
+Install all extensions at once from GitHub:
 
 ```bash
-pi install /path/to/pi-extensions/packages/delete-session
-pi install /path/to/pi-extensions/packages/exit
+pi install git:github.com/josorio7122/pi-extensions
+```
+
+Or install selectively using package filtering:
+
+```bash
+# Only the delete-session extension
+pi install git:github.com/josorio7122/pi-extensions --extensions "packages/delete-session/extensions"
+
+# Only the exit extension
+pi install git:github.com/josorio7122/pi-extensions --extensions "packages/exit/extensions"
 ```
 
 ## License
