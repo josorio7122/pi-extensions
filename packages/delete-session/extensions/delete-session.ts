@@ -27,13 +27,14 @@ export default function deleteSessionExtension(pi: ExtensionAPI) {
         .filter((s) => s.path !== currentFile)
         .sort((a, b) => b.modified.getTime() - a.modified.getTime());
 
+      await pi.exec("rm", [currentFile]);
+
       if (others.length > 0) {
-        ctx.sessionManager.setSessionFile(others[0].path);
+        await ctx.switchSession(others[0].path);
       } else {
         await ctx.newSession();
       }
 
-      await pi.exec("rm", [currentFile]);
       ctx.ui.notify("Session deleted", "success");
     },
   });
