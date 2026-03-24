@@ -10,7 +10,7 @@ import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { SessionManager } from "@mariozechner/pi-coding-agent";
 
 export default function deleteSessionExtension(pi: ExtensionAPI) {
-  pi.registerCommand("delete", {
+  pi.registerCommand("delete-session", {
     description: "Delete the current session",
     handler: async (_args, ctx) => {
       await ctx.waitForIdle();
